@@ -6,61 +6,38 @@
     android:layout_height="match_parent"
     tools:context="com.mran.cardstackpanel.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <com.mran.cardstackpanel.CardStackPanelView
-        android:id="@+id/card_stack_view"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:clipToPadding="false"
-        android:paddingBottom="10dp"
-        android:paddingLeft="30dp"
-        android:paddingRight="50dp"
-        android:paddingTop="10dp"
-        app:itemInterval="20dp"
-        app:visibleItemCount="3">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="208dp"
+        android:clipChildren="false"
+        app:layout_constraintBottom_toBottomOf="parent"
 
-        <!--<TextView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:background="@color/color0"-->
-            <!--android:gravity="center"-->
-            <!--android:text="0" />-->
+        app:layout_constraintRight_toRightOf="parent">
 
-        <!--<TextView-->
-            <!--android:layout_width="match_parent"-->
-
-            <!--android:layout_height="match_parent"-->
-
-            <!--android:background="@color/color1"-->
-            <!--android:gravity="center"-->
-            <!--android:text="1" />-->
-        <!--<TextView-->
-            <!--android:layout_width="match_parent"-->
-
-            <!--android:layout_height="match_parent"-->
-
-            <!--android:background="@color/color1"-->
-            <!--android:gravity="center"-->
-            <!--android:text="1" />-->
+        <com.mran.cardstackpanel.CardStackPanelView
+            android:background="#404040"
+            android:id="@+id/card_stack_view"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:clipToPadding="false"
+            >
 
 
-    </com.mran.cardstackpanel.CardStackPanelView>
+        </com.mran.cardstackpanel.CardStackPanelView>
+    </LinearLayout>
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.415"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.619" />
+        app:layout_constraintVertical_bias="0.801" />
 </android.support.constraint.ConstraintLayout>
